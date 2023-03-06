@@ -1,0 +1,1 @@
+web: gunicorn wall_of_shame.wsgi
