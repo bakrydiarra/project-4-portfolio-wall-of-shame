@@ -8,7 +8,7 @@ class PersonaAdmin(SummernoteModelAdmin):
     list_display = ('shamefull_nickname', 'slug', 'created_on')
     search_fields = ['shamefull_nickname', 'shameful_story']
     prepopulated_fields = {'slug': ('shamefull_nickname',)}
-    list_filter = ('created_on')
+    list_filter = ('created_on',)
     summernote_fields = ('shameful_story')
 
 
@@ -21,5 +21,5 @@ class CommentAdmin(admin.ModelAdmin):
 
 @admin.register(Like)
 class LikeAdmin(admin.ModelAdmin):
-    list_display = ('author', 'Persona')
-    list_filter = ('author')
+    list_display = ('author', 'persona')
+    list_filter = ('author',)
