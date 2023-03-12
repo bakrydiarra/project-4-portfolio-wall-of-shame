@@ -102,4 +102,4 @@ class Like(models.Model):
         To return a string representation of like -
         displaying likes in the Django admin interface
         """
-        return f'{self.user} liked {self.persona}'
+        return f'{self.author} liked {self.persona}'
