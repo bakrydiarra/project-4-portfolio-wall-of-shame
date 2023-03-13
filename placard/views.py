@@ -5,6 +5,6 @@ from .models import *
 
 class PersonaList(generic.ListView):
     model = Persona
-    queryset = Persona.order_by('created_on')
+    queryset = Persona.objects.order_by('created_on')
     template_name = 'persona_details.html'
     paginate_by = 6
